@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{ place }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="16">
+
+  </sebm-google-map>
+  <button ion-button block (click)="onDismiss()">Dismiss</button>
+</ion-content>
