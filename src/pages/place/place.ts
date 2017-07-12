@@ -10,9 +10,7 @@ export class PlacePage {
   lng: number;
   place: string;
 
-  constructor(
-      private viewCtrl: ViewController,
-      private navParams: NavParams) {
+  constructor(private viewCtrl: ViewController, private navParams: NavParams) {
         this.lat = this.navParams.data.location.lat;
         this.lng = this.navParams.data.location.lng;
         this.place = this.navParams.data.title;

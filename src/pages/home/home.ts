@@ -12,7 +12,7 @@ import { AboutPage } from "../about/about";
   templateUrl: 'home.html'
 })
 export class HomePage {
-  places: {title: string}[] = [];
+  places: {title: string; date: string; comments: string}[] = [];
 
   constructor(
       public navCtrl: NavController,
